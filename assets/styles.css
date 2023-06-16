@@ -5,7 +5,7 @@
 }
 
 .nav-link{
-    margin: 0 15px 0 15px; 
+    margin: 0 1em 0 1em; 
 }
 
 html *
@@ -14,3 +14,40 @@ html *
    /* color: #000 !important; */
    font-family: EB Garamond !important;
 }
+
+.container-fluid{
+    padding: 0px 50px 0px 50px !important;
+}
+
+/* animation */
+
+
+.intro{
+    overflow: hidden;
+    text-align: center;
+    /* background: blue; */
+    /* display: inline-block; */
+    /* width: 1200px;
+    height: 100px; */
+    max-height: 100px;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    transition:  max-height 3s;
+}
+
+
+.aboutme{
+    overflow:hidden;
+    max-height: 0px;
+    transition: max-height 5s;
+}
+
+.section_txt{
+    text-align: center;
+}
+/* DEBUG CORNER */
+
+/* .intro:hover{
+    max-height: 0px;
+} */
+

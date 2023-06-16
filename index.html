@@ -3,9 +3,11 @@
 
 <head>
 <!-- still no idea what these do READ  -->
-<!-- <script src="jquery/3.1.1.min.js"></script>
-<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 <!-- LUX & Custom CSS https://www.srihash.org -->
 <!-- <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.css" 
 integrity="sha384-hGFvHJy3v7AZgEt1eyda/H/a7PkiCMyO6OwsjhNeEboDCx8cpfIx39pv5vO7rnUj" 
@@ -28,33 +30,56 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-fill"  > -->
     <div class="container-fluid" >
 
-      <a class="navbar-brand" style="padding-left: 2em; font-size: 2em; " href="index.html"> Derrick Tan </a>
+      <a class="navbar-brand" style="font-size: 2.5em; " href="index.html"> Derrick Tan </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-x"
+                aria-controls="navbar-collapse-x" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav me-auto"style="text-align:center; display: flex; flex-direction:row-reverse; font-size: 1.5em;">
+
+      <div class="collapse navbar-collapse " id="navbar-collapse-x" >
+        <div class="navbar-nav me-auto justify-content-end"style="text-align:center; font-size: 1.5em; flex:inherit">
           <a class="nav-link" href="index.html"> Portfolio </a>
           <a class="nav-link" href="index.html"> Pet Projects </a>
           <a class="nav-link" href="index.html"> Resume </a>
           <a class="nav-link" href="index.html"> Contact </a>
         </div>
-        <div class="navbar-nav account-btns">
-          <a class="btn btn-outline-primary mx-2" href="under-construction.html" role="button">Log In</a>
-          <a class="btn btn-primary mx-1 register-btn" href="under-construction.html" role="button">Register</a>
-        </div>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-5">
-    <div class="centered">
-        <h1 class="display-4 intro" id="typing-effect"> </h1>
-        <!-- <a class="btn btn-primary px-5 mx-1" href="#genres" role="button">See My Work</a> -->
-    </div>
+  <div class="container intro" id="typing-container">
+    <h1 class="display-4 pt-3" id="typing-effect"> </h1>
   </div>
+
+
+
+
+  <div class="container-fluid mt-4 text-dark text-start aboutme" id="aboutme">
+    <div class="row">
+      <h1 class="display section_txt">About Me</h1>
+    </div>
+    <div class="row mt-4">
+      <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Dummytext0</h5>
+                <p class="card-text">textdump0</p>
+                <a href="index.html" class="btn btn-outline-primary px-4">bink</a>
+            </div>
+          </div>
+       </div>
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Dummytext1</h5>
+            <p class="card-text">textdump1</p>
+            <a href="index.html" class="btn btn-outline-primary px-4">bink</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 </body>
 <script src="typing.js"></script>
 
