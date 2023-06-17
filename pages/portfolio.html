@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CDNs for AJAX & JQuery -->
+    <!-- still no idea what these do READ  -->
+    <script   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+
+    <!-- Styling & Custom CSS https://www.srihash.org -->
+
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.css" 
+    integrity="sha384-hGFvHJy3v7AZgEt1eyda/H/a7PkiCMyO6OwsjhNeEboDCx8cpfIx39pv5vO7rnUj" 
+    crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/simplex/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+
+    <!-- Script injections -->
+    <script> 
+        $(function(){
+        $("#nav_bar").load("nav_bar.html");
+        $("#footer").load("footer.html"); 
+        });
+    </script>
+</head>
+
+<body>
+    <div id="nav_bar"></div>
+
+    <div class="container-fluid mt-4 text-dark text-start">
+        <div class="row">
+            <h1 class="display section_txt">ENAIMCO</h1>
+            <div> ENAIMCO is a software startup company with the mission of accelerating the oil and gas sector's journey 
+                to net zero using digital solutions. Here, I worked as a project engineer for the transshipment project,
+                developing solutions to improve the fuel economy of the vessels while keeping the risk of curtailment at bay. 
+                Before I get any further, let's first talk about transshipment and curtailment to ensure that we're on 
+                the same page. 
+                
+                <!-- Their flagship service is enhancing Asset Integrity Management using
+                a digital twin to subsea assets -->
+                 </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Transshipment</h5>
+                        <p class="card-text"> The shipment of goods from point A to point B. &#10; 
+                            The transshipment project is all about bringing barrels of oil from the oilfields (offshore) 
+                            to oil terminals (onshore).
+
+                        </p>
+                        <a href="index.html" class="btn btn-outline-primary px-4">bink</a>
+                    </div>
+                </div>
+           </div>
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Curtailment</h5>
+                        <p class="card-text">A fancy word for "downtime". In the context of this project, 
+                            curtailment means that oil is not being extracted for some particular reason.
+
+                            (i.e. the oilfield's tanks are capped, or perhaps it's undergoing maintenance)
+                        </p>
+                        <a href="index.html" class="btn btn-outline-primary px-4">bink</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

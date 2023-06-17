@@ -1,12 +1,7 @@
-.titular_head{
-    font-size: 3em;
-    text-align: center;
-    /* background: beige; */
-}
-
 .nav-link{
     margin: 0 1em 0 1em; 
 }
+
 
 html *
 {
@@ -36,7 +31,7 @@ html *
 }
 
 
-.aboutme{
+.clicky{
     overflow:hidden;
     max-height: 0px;
     transition: max-height 5s;
