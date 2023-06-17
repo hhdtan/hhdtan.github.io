@@ -1,18 +1,3 @@
-// let i = 0;
-// let text = "Welcome to photopia, stay awhile!";
-// // let curText = document.getElementById("typing-effect").innerHTML;
-
-// console.log('curText is')
-
-// function typeWriter() {
-//   if (i < text.length) {
-//     document.getElementById("typing-effect").innerHTML += text[i];
-//     i++;
-//     setTimeout(typeWriter, 110);
-//   }
-// }
-
-
 let text = "Greetings! Welcome to my personal website.";
 
 async function typeWriter() {
@@ -36,7 +21,8 @@ async function typeWriter() {
 
     clicky.style.maxHeight = "1000px"; 
     await new Promise(r => setTimeout(r, snore));
-    ifooter.style.maxHeight = "100px"
+    ifooter.style.maxHeight = "100px";
+    ifooter.style.display = 'block';
   // await new Promise(r => setTimeout(r, 2000));
 }
 
