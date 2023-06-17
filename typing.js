@@ -16,7 +16,7 @@
 let text = "Greetings! Welcome to my personal website.";
 
 async function typeWriter() {
-    let delay = 60;
+    let delay = 10;
     typing_effect = document.getElementById("typing-effect")
     typing_container = document.getElementById("typing-container")
     clicky = document.getElementById("clicky")
@@ -26,10 +26,10 @@ async function typeWriter() {
         await new Promise(r => setTimeout(r, delay));
     }
 
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 500));
     
     typing_container.style.maxHeight = 0; 
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 500));
     typing_container.remove()
 
     clicky.style.maxHeight = "1000px"; 

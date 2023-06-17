@@ -1,6 +1,19 @@
+<script   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
 <div class="container-fluid mt-4 text-dark text-start">
-    <div class="row">
-      <h1 class="section_txt">Clicky Stuffs</h1>
+    <div>
+        <span class="section_txt" style="display: flex;justify-content: center;"> Clicky Stuffs 
+            <div class="eyesContainer" style="position: relative;left:35px;top:-10px;">
+                <img src="picrop.svg" style="max-width: 100%; max-height: 100%;">
+                <div class="eye" style="left:61.5px">
+                    <div class="pupil"></div>
+                </div>
+                <div class="eye" style="right:56.5px">
+                    <div class="pupil"></div>
+                </div>
+            </div>
+        </span>
+
     </div>
     <div class="row mt-4">
         <div class="col-6">
@@ -23,3 +36,86 @@
         </div>
     </div>
 </div>
+
+<!-- animation, cause I can -->
+<script>
+    
+    let eyes = document.querySelectorAll(".eye");
+    
+    let eyeRect = eyes[0].getBoundingClientRect();
+
+    let container = document.querySelector(".eyesContainer");
+    let containerRect = container.getBoundingClientRect();
+
+    window.addEventListener("resize", updatePosition, false);
+
+    function updatePosition(e) {
+      eyeRect = eyes[0].getBoundingClientRect();
+      containerRect = container.getBoundingClientRect();
+    }
+
+    document.body.addEventListener("mousemove", eyesFollow, false);
+
+    function eyesFollow(e) {
+      requestAnimationFrame(() => {
+        let xPos = e.pageX;
+        let yPos = e.pageY;
+
+        let xDiff = (eyeRect.x + eyeRect.width / 2) - xPos;
+        let yDiff = (eyeRect.y + eyeRect.height / 2) - yPos;
+
+        let angle = (Math.atan2(yDiff, xDiff) * 180 / Math.PI) - 180;
+
+        container.style.setProperty("--eyeAngle", angle.toFixed(2) + "deg");
+
+        let mouseXRelativetoContainer = xPos - containerRect.x - containerRect.width / 2;
+        let mouseYRelativetoContainer = yPos - containerRect.y - containerRect.height / 2;
+
+        let containerXAngle = 60 * (mouseXRelativetoContainer / window.innerWidth);
+        let containerYAngle = -1 * 60 * (mouseYRelativetoContainer / window.innerHeight);
+
+        container.style.setProperty("--xAngle", containerXAngle.toFixed(2) + "deg");
+        container.style.setProperty("--yAngle", containerYAngle.toFixed(2) + "deg");
+      });
+    }
+</script>
+
+<style>
+    .eyesContainer {
+        position: relative;
+        left:10px;
+        top: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        background-color: rgba(0, 0, 0, .0);
+        color: white;
+        border-radius: 10px;
+        transform-style: preserve-3d;
+        /* box-shadow: 0 30px 70px #666; */
+        will-change: transform;
+        transform: perspective(500px) rotateX(var(--yAngle, 0deg)) rotateY(var(--xAngle, 0deg));
+    }
+
+    .eye {
+      width: 10px;
+      height: 10px;
+      top: 27px;
+      position: absolute;
+      z-index: -1;
+      border: 1px solid #000;
+      border-radius: 50%;
+      background-color: white;
+      transform:  rotate(var(--eyeAngle, 0deg));
+    }
+
+    .pupil {
+      position: relative;
+      width: 4px;
+      height: 4px;
+      background: #000;
+      border-radius: 50%;
+      top: calc(50% - 2px);
+      left: 5px;
+    }
+  </style>

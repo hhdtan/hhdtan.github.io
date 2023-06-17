@@ -16,7 +16,6 @@ html *
 
 /* animation */
 
-
 .intro{
     overflow: hidden;
     text-align: center;
@@ -39,6 +38,7 @@ html *
 
 .section_txt{
     text-align: center;
+    font-size: 5em;
 }
 /* DEBUG CORNER */
 
