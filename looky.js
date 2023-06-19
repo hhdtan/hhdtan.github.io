@@ -1,15 +1,22 @@
 // delay of 8 seconds to let the typewriter's element to disappear, to ensure the eyes are looking correctly.
-let snore = 8000
+
+console.log(window.location.href.slice(-9))
+if (window.location.href.slice(-9) === 'home.html'){
+    snore = 0;
+    console.log('nosleep');
+}else{
+    snore = 8000;
+    console.log('sleep');
+}
 
 setTimeout(function(){
     let eyes = document.querySelectorAll(".eye");
-    console.log('eyes')
-    console.log(eyes)
+    // console.log('eyes')
+    // console.log(eyes)
 
     let eyeRect = eyes[0].getBoundingClientRect();
-    console.log('eye rect')
-
-    console.log(eyeRect)
+    // console.log('eye rect')
+    // console.log(eyeRect)
     let container = document.querySelector(".eyesContainer");
     let containerRect = container.getBoundingClientRect();
 

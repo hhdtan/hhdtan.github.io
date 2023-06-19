@@ -13,7 +13,7 @@ async function typeWriter() {
         await new Promise(r => setTimeout(r, delay));
     }
 
-    await new Promise(r => setTimeout(r, snore));
+    await new Promise(r => setTimeout(r, snore/2));
     
     typing_container.style.maxHeight = 0; 
     await new Promise(r => setTimeout(r, snore));
