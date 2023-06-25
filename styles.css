@@ -1,3 +1,8 @@
+body{
+    background: #F9F5F1
+}
+
+
 .card:hover{
     border: 1px solid black !important;
 }
@@ -42,7 +47,13 @@ html *
 
 .section_txt{
     text-align: center;
-    font-size: 5em;
+    font-size: 4em;
+}
+
+.body_txt{
+    font-size:1.5em;
+    text-align: justify;
+    margin-bottom: 2em;
 }
 /* DEBUG CORNER */
 
