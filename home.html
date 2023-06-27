@@ -11,7 +11,8 @@
                 crossorigin="anonymous"></script>
 
     <!-- Styling & Custom CSS https://www.srihash.org -->
-
+    <link href="preloader.min.css" rel="stylesheet">
+    <link href="revealator.jquery.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.css" 
     integrity="sha384-hGFvHJy3v7AZgEt1eyda/H/a7PkiCMyO6OwsjhNeEboDCx8cpfIx39pv5vO7rnUj" 
     crossorigin="anonymous"> -->
@@ -28,12 +29,19 @@
     
         });
     </script>
+    <script src="preloader.min.js"></script>
+    <script src="revealator.jquery.min.js"></script>
 </head>
 
 <body>
+    <div id="preloader" class="preloader off">
+        <div class="black_wall"></div>
+        <div class="loader"></div>
+    </div>
     <div id="nav_bar"></div>
     <!-- style="display:none" -->
-    <div style="display:flex;flex-direction:column">
+    <div class="revealator-slideup revealator-once revealator-delay1" 
+        style="display:flex;flex-direction:column">
         <div id="clicky"></div>
         <div id="ifooter"  ></div>
     </div>
