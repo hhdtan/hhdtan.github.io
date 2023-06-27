@@ -6,7 +6,7 @@ async function typeWriter() {
     typing_effect = document.getElementById("typing-effect");
     typing_container = document.getElementById("typing-container");
     // clicky = document.getElementById("clicky");
-    ifooter = document.getElementById("ifooter");
+    // ifooter = document.getElementById("ifooter");
 
     for (let i = 0; i < text.length; i++){
         typing_effect.innerHTML += text[i];
@@ -20,9 +20,9 @@ async function typeWriter() {
     typing_container.remove()
 
     // clicky.style.maxHeight = "1000px"; 
-    await new Promise(r => setTimeout(r, snore));
-    ifooter.style.maxHeight = "100px";
-    ifooter.style.display = 'block';
+    // await new Promise(r => setTimeout(r, snore));
+    // ifooter.style.maxHeight = "100px";
+    // ifooter.style.display = 'block';
   // await new Promise(r => setTimeout(r, 2000));
 }
 

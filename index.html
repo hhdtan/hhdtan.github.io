@@ -11,7 +11,8 @@
                 crossorigin="anonymous"></script>
 
     <!-- Styling & Custom CSS https://www.srihash.org -->
-
+    <link href="preloader.min.css" rel="stylesheet">
+    <link href="revealator.jquery.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.css" 
     integrity="sha384-hGFvHJy3v7AZgEt1eyda/H/a7PkiCMyO6OwsjhNeEboDCx8cpfIx39pv5vO7rnUj" 
     crossorigin="anonymous"> -->
@@ -29,39 +30,51 @@
         });
     </script>
     <script src="typing.js"></script>
+    <script src="preloader.min.js"></script>
+    <script src="revealator.jquery.min.js"></script>
 </head>
 
 <body onload="typeWriter()">
+    <div id="preloader" class="preloader off">
+        <div class="black_wall"></div>
+        <div class="loader"></div>
+    </div>
+         
     <div id="nav_bar"></div>
+    <div class="color-block d-lg-block d-sm-none"></div>
     <!-- style="display:none" -->
-    <div class="container intro" id="typing-container" >
+    <div class="container intro" id="typing-container" style="z-index:1" >
         <h1 class="display-4 pt-3" id="typing-effect"> </h1>
     </div>
-    <div style="display:flex; flex-direction:column;">
-        <!-- <div class="clicky" id="clicky"></div> -->
-        <div class='mt-5' style="display:flex; flex-direction:row">
-            <div class="color-block d-lg-block d-sm-none"></div>
-            <div class="col-lg-4 d-sm-none d-lg-block" style="padding-left: 50px;">
-                <img class ='bg' src='assets/cropped.jpg'> 
-            </div>
-            <div class="col-lg-8" style="padding: 0 50px 0 50px;
-            justify-content: center;display: flex;flex-direction: column;">
-                <img src="assets/mobile.jpg" class="img-fluid main-img-mobile d-sm-block d-lg-none" alt="my picture">
-                <h3> Hi there!</h3>
-                <h1 style="font-family: 'Poppins', sans-serif !important; color:#ff9f00;
-                font-size: 5em;line-height: .8em;font-weight: 700;"> 
-                    <span style='color:#303234 !important'>I'M </span>DERRICK TAN
-                </h1>
-                <p style='color:#303234 !important; font-size: 1.5em; text-align: justify;'>
-                    I'm a data scientist pretending to be an engineer, I enjoy crafting stories using data to promote 
-                    data-driven decision making. I'm passionate about data and programming literacy, hoping to 
-                    specialise as a machine learning engineer in the coming years.
-                </p>
-                
-            </div>
-        </div>
+    
+    <div class="container-fluid revealator-slideup revealator-once revealator-delay1">
 
-        <div id="ifooter"></div>
+        <div style="display:flex; flex-direction:column;">
+            <!-- <div class="clicky" id="clicky"></div> -->
+            <div class='mt-5' style="display:flex; flex-direction:row">
+                
+                <div class="col-lg-4 d-sm-none d-lg-block" style="padding-left: 50px;">
+                    <img class ='bg' src='assets/cropped.jpg'> 
+                </div>
+                <div class="col-lg-8" style="padding: 0 50px 0 50px;
+                justify-content: center;display: flex;flex-direction: column;">
+                    <img src="assets/mobile.jpg" class="img-fluid main-img-mobile d-sm-block d-lg-none" alt="my picture">
+                    <h3 class="d-lg-block d-sm-none"> Hi there!</h3>
+                    <h1 style="font-family: 'Poppins', sans-serif !important; color:#ff9f00;
+                    font-size: 5em;line-height: .8em;font-weight: 700;"> 
+                        <span style='color:#303234 !important'>I'M </span>DERRICK TAN
+                    </h1>
+                    <p style='color:#303234 !important; font-size: 1.5em; text-align: justify;'>
+                        I'm a data scientist pretending to be an engineer, I enjoy crafting stories using data to promote 
+                        data-driven decision making. I'm passionate about data and programming literacy, hoping to 
+                        specialise as a machine learning engineer in the coming years.
+                    </p>
+                    
+                </div>
+            </div>
+        
+            <div id="ifooter"></div>
+        </div>
     </div>
     
 </body>
