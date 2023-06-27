@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://bootswatch.com/5/simplex/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <!-- Script injections -->
     <script> 
         $(function(){
@@ -37,8 +37,30 @@
     <div class="container intro" id="typing-container" >
         <h1 class="display-4 pt-3" id="typing-effect"> </h1>
     </div>
-    <div style="display:flex;flex-direction:column">
-        <div class="clicky" id="clicky"></div>
+    <div style="display:flex; flex-direction:column;">
+        <!-- <div class="clicky" id="clicky"></div> -->
+        <div class='mt-5' style="display:flex; flex-direction:row">
+            <div class="color-block d-lg-block d-sm-none"></div>
+            <div class="col-lg-4 d-sm-none d-lg-block" style="padding-left: 50px;">
+                <img class ='bg' src='assets/cropped.jpg'> 
+            </div>
+            <div class="col-lg-8" style="padding: 0 50px 0 50px;
+            justify-content: center;display: flex;flex-direction: column;">
+                <img src="assets/mobile.jpg" class="img-fluid main-img-mobile d-sm-block d-lg-none" alt="my picture">
+                <h3> Hi there!</h3>
+                <h1 style="font-family: 'Poppins', sans-serif !important; color:#ff9f00;
+                font-size: 5em;line-height: .8em;font-weight: 700;"> 
+                    <span style='color:#303234 !important'>I'M </span>DERRICK TAN
+                </h1>
+                <p style='color:#303234 !important; font-size: 1.5em; text-align: justify;'>
+                    I'm a data scientist pretending to be an engineer, I enjoy crafting stories using data to promote 
+                    data-driven decision making. I'm passionate about data and programming literacy, hoping to 
+                    specialise as a machine learning engineer in the coming years.
+                </p>
+                
+            </div>
+        </div>
+
         <div id="ifooter"  style="max-height:0 !important; transition: max-height 1s; 
                                   overflow: hidden; display:none;"></div>
     </div>
@@ -46,3 +68,35 @@
 </body>
 
 </html>
+
+<style>
+
+.bg {
+    
+    /* height: calc(100vh - 60px); */
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 7px rgba(0,0,0,.9);
+}
+
+
+.color-block {
+    background-color: #ff9e0096;
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -75%;
+    top: -25%;
+    z-index: -1;
+}
+
+
+.main-img-mobile {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    border: 3px solid #a2a2c1;
+    margin: 0 auto 25px;
+}
+</style>
