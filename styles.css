@@ -22,8 +22,7 @@ body{
     background: #F9F5F1
 }
 
-
-/*** Desktop Navigation ***/
+/* Desktop & Mobile index text */
 @media (min-width: 991px) {
     .index-desktop-container{
         display:flex; 
@@ -37,8 +36,15 @@ body{
         display: flex;
         flex-direction: column;
     }
-
 }
+
+@media (max-width: 991px) {
+    .index-desktop-text{
+        text-align: center;
+    }
+}
+
+/*** Desktop Navigation ***/
 /* header container properties */
 .header {
     position: fixed;
