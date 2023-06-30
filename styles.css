@@ -165,14 +165,13 @@ body{
 
 }
 @media (max-width: 991px) {
-
-
+    /* mobile menu button properties */
     #menuToggle {
       display: inline-block;
       position: fixed;
       top: 30px;
       right: 30px;
-      z-index: 1111;
+      z-index: 0;
       user-select: none;
       padding: 19px 0 0 16px;
       width: 54px;
@@ -180,7 +179,7 @@ body{
       border-radius: 5px;
       background: #252525;
     }
-  
+    /* mobile menu inputbox properties */
     #menuToggle input {
       display: flex;
       width: 54px;
@@ -188,11 +187,12 @@ body{
       position: absolute;
       cursor: pointer;
       opacity: 0;
-      z-index: 2;
+      z-index: 100;
       top: 0;
       left: 0;
     }
-  
+
+    /* mobile menu 3 bar properties */
     #menuToggle > span {
       display: flex;
       width: 23px;
@@ -203,34 +203,33 @@ body{
       border-radius: 3px;
       z-index: 1;
       transform-origin: 5px 0;
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-      opacity 0.55s ease;
+      transition: transform 0.3s, opacity 0.25s ease;
     }
-  
+    /* first bar, upperleft pivot point */
     #menuToggle > span:first-child {
       transform-origin: 0 0;
     }
-  
+    /* last bar, lower left pivot point */
     #menuToggle > span:nth-last-child(2) {
       transform-origin: 0 100%;
     }
-  
+    /* top bar: shift right a lil, rotate */
     #menuToggle input:checked ~ span {
-      opacity: 1;
+      /* opacity: 1; */
       transform: rotate(45deg) translate(4px, 0);
-      background: #fff;
     }
-  
+    /* middle bar, 0 rotation, shrink, and fade */
     #menuToggle input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
-  
+
+    /* bottom bar */
     #menuToggle input:checked ~ span:nth-last-child(2) {
-      transform: rotate(-45deg) translate(2px, 4px);
+      transform: rotate(-45deg) translate(3px, 4px);
     }
-  
+    
+    /* mobile menu properties */
     #menu {
       position: fixed;
       left: 0;
@@ -243,52 +242,50 @@ body{
       -webkit-font-smoothing: antialiased;
       transform-origin: 0 0;
       transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      transition: transform 0.5s;
     }
-  
+    
+    /* expand menu box on check */
+    /* note, default position of the menu is -100%x, 0y, 
+        the menubar is toggled by removing the transform:translate */
     #menuToggle input:checked ~ ul {
       transform: none;
     }
-  
+    /* menu item spacer */
     #menu li {
       position: relative;
       padding-left: 30px;
     }
   
+    /* menu seperation lines */
     #menu li:after {
       position: absolute;
       content: '';
       height: 1px;
-      width: calc(100% - 60px);
+      width: 90vw;
       background: #333;
-      left: 30px;
+      /* left: 30px; */
     }
   
+    /* remove menu separation lines for the last list item */
     #menu li:last-child:after {
       display: none;
     }
-  
-    #menu li.active a span {
-      font-weight: 600;
-    }
-  
+
+    /* mobile navi list  */
     #menu li a {
       color: #fff;
-      text-transform: uppercase;
-      transition-delay: 2s;
-      font-size: 26px;
+      font-size: 2em;
       display: block;
       text-decoration: none;
-      padding: 14px 0;
+      padding: 15px 0;
       position: relative;
     }
-  
+    /* mobile navi text */
     #menu li a span {
       position: absolute;
       left: 50px;
-      font-weight: 400;
     }
-
 }
 
 .card:hover{
