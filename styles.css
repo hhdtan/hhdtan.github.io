@@ -22,6 +22,41 @@ body{
     background: #F9F5F1
 }
 
+.intro{
+    overflow: hidden;
+    text-align: center;
+    /* background: blue; */
+    /* display: inline-block; */
+    /* width: 1200px;
+    height: 100px; */
+    max-height: 300px;
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    transition:  max-height 3s;
+}
+
+html *
+{
+   /* font-size: 1em !important; */
+   /* color: #000 !important; */
+   font-family: EB Garamond;
+}
+
+.container-fluid{
+    padding: 0px 100px 0px 50px !important;
+}
+/* big text separating sections */
+.section_txt{
+    text-align: center;
+    font-size: 4em;
+}
+
+.body_txt{
+    font-size:1.5em;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
 /* Desktop & Mobile index text */
 @media (min-width: 991px) {
     .index-desktop-container{
@@ -36,6 +71,7 @@ body{
         display: flex;
         flex-direction: column;
         line-height: 2em;
+        margin: auto 0 auto 0;
     }
 }
 
@@ -45,7 +81,8 @@ body{
     }
 }
 
-/*** Desktop Navigation ***/
+/*** NAVIGATION ***/
+/* DESKTOP */
 /* header container properties */
 .header {
     position: fixed;
@@ -158,7 +195,7 @@ body{
     background: transparent; 
 }
 
-/* Mobile  Navigation */
+/* MOBILE */
 @media (max-width:576px){
     .d-smsm-none{
         display: none !important;
@@ -289,6 +326,9 @@ body{
     }
 }
 
+/*** NAVIGATION ENDS ***/
+
+/* CLICKY */
 .card:hover{
     border: 1px solid black !important;
 }
@@ -297,19 +337,7 @@ body{
     margin: 0 1em 0 1em; 
 }
 
-
-html *
-{
-   /* font-size: 1em !important; */
-   /* color: #000 !important; */
-   font-family: EB Garamond;
-}
-
-.container-fluid{
-    padding: 0px 100px 0px 50px !important;
-}
-
-/* animation */
+/* PI CREATURE START */
 .eyesContainer {
     position: relative;
     left:10px;
@@ -346,41 +374,4 @@ html *
   top: calc(50% - 2px);
   left: 5px;
 }
-
-.intro{
-    overflow: hidden;
-    text-align: center;
-    /* background: blue; */
-    /* display: inline-block; */
-    /* width: 1200px;
-    height: 100px; */
-    max-height: 300px;
-    /* border: 1px solid black;
-    border-radius: 5px; */
-    transition:  max-height 3s;
-}
-
-/* OUTDATED ANIMATION */
-.clicky{
-    overflow:hidden;
-    max-height: 0px;
-    transition: max-height 5s;
-}
-
-/* big text separating sections */
-.section_txt{
-    text-align: center;
-    font-size: 4em;
-}
-
-.body_txt{
-    font-size:1.5em;
-    text-align: justify;
-    margin-bottom: 2em;
-}
-/* DEBUG CORNER */
-
-/* .intro:hover{
-    max-height: 0px;
-} */
-
+/* PI CREATURE ENDS */
