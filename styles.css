@@ -17,11 +17,21 @@
     --icon-active:#000000;
 }
 
+/* global font: note, do NOT use !important - you'll break fontawesome */
+html *
+{
+   /* font-size: 1em !important; */
+   /* color: #000 !important; */
+   font-family: EB Garamond;
+}
+
 
 body{
     background: #F9F5F1
 }
 
+/* INDEX PAGE */
+/* typewriter */
 .intro{
     overflow: hidden;
     text-align: center;
@@ -35,16 +45,27 @@ body{
     transition:  max-height 3s;
 }
 
-html *
-{
-   /* font-size: 1em !important; */
-   /* color: #000 !important; */
-   font-family: EB Garamond;
+/* background color slash */
+.color-block {
+    /* background-color: #ff9e0096; */
+    overflow: visible !important;
+    background-color: var(--colorblockslice);
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-17.5deg);
+    left: -80%;
+    top: -50%;
+    z-index: -1;
 }
+
+
+
 
 .container-fluid{
     padding: 0px 100px 0px 50px !important;
 }
+
 /* big text separating sections */
 .section_txt{
     text-align: center;
