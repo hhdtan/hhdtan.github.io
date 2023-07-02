@@ -25,6 +25,18 @@ html *
    font-family: EB Garamond;
 }
 
+/* global padding for all root containers */
+@media (min-width: 992px) {
+    .container-fluid{
+        padding: 0px 100px 0px 50px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .container-fluid{
+        padding: 0px 50px 0px 50px !important;
+    }
+}
 
 body{
     background: #F9F5F1
@@ -60,12 +72,6 @@ body{
 }
 
 
-
-
-.container-fluid{
-    padding: 0px 100px 0px 50px !important;
-}
-
 /* big text separating sections */
 .section_txt{
     text-align: center;
@@ -79,11 +85,11 @@ body{
 }
 
 /* Desktop & Mobile index text */
-@media (min-width: 991px) {
-    .index-desktop-container{
+@media (min-width: 992px) {
+    .index-desktop-box{
         display:flex; 
         flex-direction:row; 
-        height: 80vh;
+        /* height: 80vh; */
     }
 
     .index-desktop-text{
@@ -360,9 +366,6 @@ body{
 
 /* PI CREATURE START */
 .eyesContainer {
-    position: relative;
-    left:10px;
-    top: 10px;
     width: 100px;
     height: 100px;
     background-color: rgba(0, 0, 0, .0);
