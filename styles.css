@@ -106,6 +106,7 @@ body{
 @media (max-width: 991px) {
     .index-desktop-text{
         text-align: center;
+        font-size:0.85em;
     }
 }
 
