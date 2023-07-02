@@ -38,6 +38,12 @@ html *
     }
 }
 
+@media (max-width: 576px) {
+    .container-fluid{
+        padding: 0px 25px 0px 25px !important;
+    }
+}
+
 body{
     background: #F9F5F1
 }
@@ -106,7 +112,7 @@ body{
 @media (max-width: 991px) {
     .index-desktop-text{
         text-align: center;
-        font-size:0.85em;
+        font-size:0.75em;
     }
 }
 
