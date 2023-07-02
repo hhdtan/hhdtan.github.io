@@ -99,6 +99,7 @@ body{
         flex-direction: column;
         line-height: 2em;
         margin: auto 0 auto 0;
+        min-height:90vh;
     }
 }
 
