@@ -27,12 +27,22 @@
     </div>
     <!-- <div id="nav_bar"></div> -->
 
-    <!-- Navicons -->
+    <!-- Navicons & color block -->
     <div id="nav_icon"></div>
-    <div class="container-fluid mt-4 text-dark text-start
-                revealator-slideup revealator-once revealator-delay1">
+    <div class="color-block d-lg-block d-sm-none d-smsm-none"></div>
+
+    <!-- Container -->
+    <div class="container-fluid mt-5 revealator-slideup revealator-once revealator-delay1">
+
+        <!-- Header and Pi -->
+        <div>
+            <span class="section_txt" style="display: flex;justify-content: center;"> Portfolio
+                <div id="pi_creature"> </div>
+            </span>
+        </div>
+
         <div class="row">
-            <h1 class="display section_txt">Under construction...</h1>
+            <!-- <h1 class="display section_txt">Under construction...</h1> -->
             <div> ENAIMCO is a software startup company with the mission of accelerating the oil and gas sector's journey 
                 to net zero using digital solutions. Here, I worked as a project engineer for the transshipment project,
                 developing solutions to improve the fuel economy of the vessels while keeping the risk of curtailment at bay. 
@@ -71,8 +81,9 @@
                 </div>
             </div>
         </div>
+        <div id="footer"></div>
     </div>
-    <div id="footer"></div>
+    
 </body>
 
 </html>
@@ -82,6 +93,7 @@
     $(function(){
     // $("#nav_bar").load("reusable/nav_bar.html");
     $("#nav_icon").load("reusable/nav_icon.html");
+    $("#pi_creature").load("pi_creature.html"); 
     $("#footer").load("reusable/footer.html"); 
 
     });
