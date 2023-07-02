@@ -231,12 +231,6 @@ body{
 }
 
 /* MOBILE */
-@media (max-width:576px){
-    .d-smsm-none{
-        display: none !important;
-    }
-
-}
 @media (max-width: 991px) {
     /* mobile menu button properties */
     #menuToggle {
