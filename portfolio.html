@@ -29,56 +29,106 @@
 
     <!-- Navicons & color block -->
     <div id="nav_icon"></div>
-    <div class="color-block d-lg-block d-sm-none d-smsm-none"></div>
+    <!-- <div class="color-block d-lg-block d-sm-none d-smsm-none"></div> -->
 
     <!-- Container -->
     <div class="container-fluid mt-5 revealator-slideup revealator-once revealator-delay1">
 
-        <!-- Header and Pi -->
-        <div>
-            <span class="section_txt" style="display: flex;justify-content: center;"> Portfolio
-                <div id="pi_creature"> </div>
-            </span>
-        </div>
-
         <div class="row">
+            <!-- Header and Pi -->
+            <div>
+                <span class="section_txt" style="display: flex;justify-content: center;"> Portfolio
+                    <div id="pi_creature"> </div>
+                </span>
+            </div>
+            <h2> ENAIMCO - Transshipment Project Engineer </h2>
             <!-- <h1 class="display section_txt">Under construction...</h1> -->
-            <div> ENAIMCO is a software startup company with the mission of accelerating the oil and gas sector's journey 
-                to net zero using digital solutions. Here, I worked as a project engineer for the transshipment project,
-                developing solutions to improve the fuel economy of the vessels while keeping the risk of curtailment at bay. 
-                Before I get any further, let's first talk about transshipment and curtailment to ensure that we're on 
-                the same page. 
-                
-                <!-- Their flagship service is enhancing Asset Integrity Management using
-                a digital twin to subsea assets -->
-                 </div>
+            <div class="col-12 body_txt">
+                <p>
+                    ENAIMCO is a software startup company with the mission of accelerating the oil and gas sector's journey 
+                    to net zero using digital solutions. My work was primarily centered around the transshipment project,
+                    where a simulation engine was developed to simulate millions of voyages to optimise for fuel economy 
+                    (which reduces GHG emissions and costs) while keeping curtailment risk minimal. 
+                </p>
+                <p>
+                    <h3>Role Summary</h3>
+                    <ul style="font-size:0.8em;">
+                        <li>Transcribed a simulation engine made in Excel into Python, speeding up processing speed by a factor of 100 using 
+                            JIT compilation and vectorisation (Pandas NumPy Numba) </li>
+                        <li>Analysed historical wave data to developed probablistic wave insights to
+                            incorporate data driven decision-making in the simulation engine, reducing vessel fuel consumption and carbon emissions by 15%
+                            (i.e. if your current wave predictions are telling you XYZ, the software will advise you what's the probability that
+                            specific events will occur)</li> (SciPy Plotly Dash)
+                        <li>Generated scripts to automate my supervisor's life (i.e. generating prepatory sheets required for OrcaFlex, 
+                            extracting )</li>
+                    </ul>
+
+                    The most challenging and rewarding part of this project is how open-ended it was. I really appreciated the opportunity to work 
+                    alongside my beloved supervisor (a senior analysis engineer) and tag-team our way through all the uncertainties, trying to quantifying the chaotic nature of
+                    dealing with offshore Newfoundland waves.  
+                    
+                    <hr style=" margin: 2rem 5rem;"/>
+                </p>
+                <p style="text-align: center;">
+                    <br> 
+                    <i>
+                        The Transshipment Project: Devise a way to optimise the fuel economy of the NL transshipment project.
+                    </i>
+                </p>
+                <p> 
+                    <br>
+                    Let's say we have a very important meeting to attend, and we <i>cannot</i> afford to be late. If the goal was purely to 
+                    <i>not be late</i>, then a naive solution would be to arrive as early as possible, and then wait at the venue.
+                    During our transit to the venue, we would travel at maximum speed (well within vehicular and regulatory limits, obviously)
+                    and that would be <i>a solution</i> to the problem. It is not a fantastic solution, but it is <i>a solution</i>.
+                </p>
+                <p>
+                    What are some obvious problems with this methodology? 
+
+                    <ol>
+                        <li>Arriving too early serves no practical purpose. Early is good, but only if its early <i>within reason</i></li>
+                        <li>Maximum speed is usually not an efficient mode of travel, it burns more fuel than it necessary 
+                            (unless we're going to be late, there's no justifiable reason to book it)
+                        </li>
+                    </ol>  
+                </p>
+                <p>
+                    <!-- <ul>
+                        <li>Important meeting date – the date that the oilfield is going to cap out</li>
+                        <li>arriving too early – there's not enough oil to pick up
+                        </li>
+                    </ul>  -->
+
+                    Unfortunately, it is <i>the solution</i> employed by the transshipment side of things here to to avoid curtailment. 
+                    The transshipment project is all about applying intelligence to the decision making process of this scheduling system.
+                    <br>
+                    <hr style=" margin: 3rem 0 0 0;"/> 
+                </p>
+            </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Transshipment</h5>
-                        <p class="card-text"> The shipment of goods from point A to point B. &#10; 
-                            The transshipment project is all about bringing barrels of oil from the oilfields (offshore) 
-                            to oil terminals (onshore).
+        <div class="row">
+            <h2> NRC - Jr. Machine Learning Engineer & Fullstack Developer </h2>
+            <!-- <h1 class="display section_txt">Under construction...</h1> -->
+            <div class="col-12 body_txt">
+                <p>
+                    <h3>Role Summary </h3>
+                    <ul style="font-size:0.8em;">
+                        <li>Familiarised with ML workflows, from data wrangling to linux server development </li>
+                        <li> </li> 
+                        <li>Generated scripts to automate my supervisor's life (i.e. generating prepatory sheets required for OrcaFlex, 
+                            extracting )</li>
+                    </ul>
 
-                        </p>
-                        <a href="index.html" class="btn btn-outline-primary px-4">bink</a>
-                    </div>
-                </div>
-           </div>
-            <div class="col-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Curtailment</h5>
-                        <p class="card-text">A fancy word for "downtime". In the context of this project, 
-                            curtailment means that oil is not being extracted for some particular reason.
-
-                            (i.e. the oilfield's tanks are capped, or perhaps it's undergoing maintenance)
-                        </p>
-                        <a href="index.html" class="btn btn-outline-primary px-4">bink</a>
-                    </div>
-                </div>
+                    The most challenging and rewarding part of this project is how open-ended it was. I really appreciated the opportunity to work 
+                    alongside my beloved supervisor (a senior analysis engineer) and tag-team our way through all the uncertainties, trying to quantifying the chaotic nature of
+                    dealing with offshore Newfoundland waves.  
+                    
+                    <!-- The project is very much open ended, which
+                    prompted a lot of discussion regarding the problem itself, solution methodologies, potential avenues to explore, and future work.
+                    I really enjoyed the freedom that entails with this project.  -->
+                    <hr style=" margin: 2rem 5rem;"/> 
+                </p>
+                    <hr style=" margin: 2rem 5rem;"/> 
             </div>
         </div>
         <div id="footer"></div>
